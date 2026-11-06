@@ -20,8 +20,8 @@ Ticket **#4471** merged **412** reports about wrong booking dates and was marked
 parser bug. Run through the kb's own cause rule (`causes.ts`), the merge holds **two causes**.
 
 <Callout>
-Filed: [#1 parser · 379 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/1) and
-[#2 hint · 33 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/2).
+Filed: [#3 parser · 379 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/3) and
+[#4 hint · 33 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/4).
 </Callout>
 
 ## What was merged
@@ -32,8 +32,8 @@ Filed: [#1 parser · 379 reports](https://github.com/dawidLubcz/s01e03-what-it-s
 
 | Cause | Reports | GitHub | Belongs on #4471? |
 |-------|--------:|--------|-------------------|
-| `parser` | **379** | [issue #1](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/1) | yes — month-first parser vs day-first tenants |
-| `hint` | **33** | [issue #2](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/2) | no — booking-v3 **MM/DD/YYYY** hint on day-first locales |
+| `parser` | **379** | [issue #3](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/3) | yes — month-first parser vs day-first tenants |
+| `hint` | **33** | [issue #4](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/4) | no — booking-v3 **MM/DD/YYYY** hint on day-first locales |
 
 The `hint` reports were merged into #4471 before anyone split them. A parser fix does not
 resolve them.

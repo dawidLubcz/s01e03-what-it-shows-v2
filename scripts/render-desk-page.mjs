@@ -83,8 +83,8 @@ function deskRef(sig) {
 const ref = signature ? deskRef(signature) : 'DR-????-????';
 const closed = status === 'closed';
 const TICKET = {
-  parser: { issue: 1, outcome: 'fixed · closed completed' },
-  hint: { issue: 2, outcome: "won't fix · closed not planned" },
+  parser: { issue: 3, outcome: 'fixed · closed completed' },
+  hint: { issue: 4, outcome: "won't fix · closed not planned" },
 };
 const issueUrl = (n) => `https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/${n}`;
 const rows = groups
