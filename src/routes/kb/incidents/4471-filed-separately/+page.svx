@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 · two causes filed separately'
 owner: dawidLubcz
-status: filed
+status: closed
 reviewed: 2026-11-06
 signature: v1.eyJzdG9yeSI6Im9mZiIsInN1YiI6IjkwNjYiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzkyNjcxMywiZXhwIjoxNzk0MDEzMTEzfQ.IZ6RGeK6uWhbqGcGwm1fBBmPD3xcTCl7gt8ZeIYSqXU
 ---
@@ -19,9 +19,12 @@ signature: v1.eyJzdG9yeSI6Im9mZiIsInN1YiI6IjkwNjYiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC
 Ticket **#4471** merged **412** reports about wrong booking dates and was marked known as one
 parser bug. Run through the kb's own cause rule (`causes.ts`), the merge holds **two causes**.
 
+Engineering closed #4471 on 5 October: `parser` fixed by `fix(dates): parse dd/mm for eu locales`,
+`hint` won't fix because the booking-v3 form was retired.
+
 <Callout>
-Filed: [#3 parser · 379 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/3) and
-[#4 hint · 33 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/4).
+[#3 parser · 379 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/3): closed as completed (fixed).
+[#4 hint · 33 reports](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/4): closed as not planned (won't fix).
 </Callout>
 
 ## What was merged
@@ -30,13 +33,13 @@ Filed: [#3 parser · 379 reports](https://github.com/dawidLubcz/s01e03-what-it-s
 
 ## Filed tickets
 
-| Cause | Reports | GitHub | Belongs on #4471? |
-|-------|--------:|--------|-------------------|
-| `parser` | **379** | [issue #3](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/3) | yes — month-first parser vs day-first tenants |
-| `hint` | **33** | [issue #4](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/4) | no — booking-v3 **MM/DD/YYYY** hint on day-first locales |
+| Cause | Reports | GitHub | Outcome | Belongs on #4471? |
+|-------|--------:|--------|---------|-------------------|
+| `parser` | **379** | [issue #3](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/3) | fixed | yes — month-first parser vs day-first tenants |
+| `hint` | **33** | [issue #4](https://github.com/dawidLubcz/s01e03-what-it-shows-v2/issues/4) | won't fix | no — booking-v3 **MM/DD/YYYY** hint on day-first locales |
 
-The `hint` reports were merged into #4471 before anyone split them. A parser fix does not
-resolve them.
+The `hint` reports were merged into #4471 before anyone split them. The parser fix did not
+resolve them; retiring booking-v3 removed their cause.
 
 ## Lessons
 
